@@ -141,7 +141,8 @@
 
 			article {
 				border-left: 3px solid;
-				margin-left: 2% ;
+				margin-left: 2%;
+				margin-right: 2%;
 				text-align: center;
 			    	background-color: rgba(255, 255, 255, 0.5);
 				padding: 17px 20px 020px;
