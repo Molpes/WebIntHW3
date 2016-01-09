@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="map.css" type="text/css">
+        <title>Housing</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+     
+   
+
+</head>
+
+<body>
+	
+        <header>
+
+                        <img src="eurecom.jpg" id="logo1" alt="mon logo"/>
+                        <input type="text" id="Search" name="search" placeholder="Search..">    
+                        <button type="button" class="btn btn-info" id="SearchB">  Search ϙ</button>
+                        <img src="applogo.png" id="AppName" value= "logo of the website" alt="mon logo"/>          
+
+                <nav>
+                    <ul>
+                        <li><a href="page2.html">Home</a></li>
+                        <li><a href="http://www.eurecom.fr/sites/www.eurecom.fr/files/documents/5-vie_etudiante/Stud_guidePratique/RESIDENCES%20FR_3.pdf">Help</a></li>
+                        <li><a href="http://www.eurecom.fr/en/student-life/survival-guide/housing">About</a></li>
+                    </ul>
+                </nav>  
+        </header>
+
+	
+			
+	   
+<section id="articles">
+<article>
+                <section class="image">
+                <link rel="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.css">
+                
+                <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.js"></script>
+                <div id="mydiv" class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true , "freeScroll": true, "wrapAround": true, "autoPlay": 2000}'>
+                    <img class="image1" src="offre4.jpg" >
+                    <img class="image1" src="offre5.jpg"  >
+                    <img class="image1" src="offre6.jpg">
+
+        
+        </section> 
+        <section id="desc">
+            <h2>Lovely apartment. 5 mins walk to Nice train station</h2>
+             <h6>Price: €1,000 Per Month <br>
+            Reference: IFPR27437 <br>
+            Region: Provence-Alpes-Côte d'Azur<br>
+            Nearest Sizeable Town: Nice<br>
+            Location: Convienent location,<br> Quiet location, wifi
+            </h6>
+
+        </section>  
+
+</article>
+            <article id="map_article">
+            
+                    <div id="google-map"></div>
+                    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+                    <script type="text/javascript" src="map2.js"></script>
+                    <script>showAddressOnMap();</script>
+              <h2> <button class="button"  id="book"> Book Now !</button></h2> 
+    
+            </article>
+                
+
+         <article id="comment">
+                <div class="container">
+                <div class="main">
+                <h2>Get in touch with possible flatmates!</h2>
+                <form action="">
+                <!-- Text -->
+                <label>Your name :</label>
+                <input type="text" id="text" name="name" value="" />
+                <input type="button" id="text_reset" value=" Reset "/>
+
+                <p id="result"></p>
+                <!-- Textarea -->
+                <label>write something to get in touch :</label>
+                <textarea id="textarea" ></textarea><br>
+                <input type="button" id="textarea_value" value="Comment!"/>
+                <input type="button" id="textarea_reset" value=" Reset "/>
+                </form>
+                </div>
+                </div>
+
+
+         	</article>
+  
+   
+	
+</section>
+<!-- form -->
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="form_value.js"></script>
+			
+    <footer>
+        <div id="copyright">
+        <p>©Bouneb-Günther - 2016 EURECOM - WebInt</p> 
+        </div>   		
+
+    </footer>
+    
+</body>
+</html>
