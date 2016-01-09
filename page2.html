@@ -31,9 +31,9 @@
 		        	<ul>
             
 		        		<li><a href="page2.html">Home</a></li>
-		 				<li><a href="http://www.eurecom.fr/sites/www.eurecom.fr/files/documents/5-vie_etudiante/Stud_guidePratique/RESIDENCES%20FR_3.pdf">Help</a></li>
-		 				<li><a href="http://www.eurecom.fr/en/student-life/survival-guide/housing">About</a></li>
-		            </ul>
+	 				<li><a href="http://www.eurecom.fr/sites/www.eurecom.fr/files/documents/5-vie_etudiante/Stud_guidePratique/RESIDENCES%20FR_3.pdf">Help</a></li>
+	 				<li><a href="http://www.eurecom.fr/en/student-life/survival-guide/housing">About</a></li>
+		            	</ul>
 		        </nav>  
         </header>
 
@@ -41,140 +41,116 @@
 
 	<section id="artc">
         <!-- Part video -->
-        <!-- <aside> -->
-        <article>
+        <!-- article HAD BEEN ASIDE BEFORE!!! <aside> -->
+        	<article>
 
-          <h3> Best tips from the Experts ! </h3>
+          		<h3> Best tips from the Experts ! </h3>
           
-          <!-- youtube video-->
-          <section>
-          <h4></h4>	
-          	<video controls poster="Video.jpg" width="560" height="315" id="idvideo">
-              		<source src="https://ia902609.us.archive.org/29/items/role_commissionsscolaires/role_commissionsscolaires-ES.mp4">
-        		<source src="https://ia902609.us.archive.org/29/items/role_commissionsscolaires/role_commissionsscolaires-ES.ogv">
+        		 <!-- youtube video-->
+        			<section>
+        				<video controls poster="Video.jpg" width="560" height="315" id="idvideo">
+              				<source src="https://ia902609.us.archive.org/29/items/role_commissionsscolaires/role_commissionsscolaires-ES.mp4">
+        				<source src="https://ia902609.us.archive.org/29/items/role_commissionsscolaires/role_commissionsscolaires-ES.ogv">
+        				</video>
+          			</section>
 
-           
-                </video>
-          </section>
-
-                <section>
-   
-                
-                 <form method="get">
-                        <p><button type="button" class="btn btn-info" onclick="changevideo()">Change video !</button>
-                        <button type="button" class="btn btn-info" onclick="flipperY()">Mirror</button>
-                        <input id="time1" type="number" value="0" name="time1" />  s
-                        <button type="button" class="btn btn-info" onclick="setCurTime()" >Jump</button></p>
-                        <p>Hide the default controls 
-                        <input id="hide" type="checkbox"  value="hide" onclick="toggleControls()"/> </p>
+                		<section>
+                			<form method="get">
+                				<p>
+                					<button type="button" class="btn btn-info" onclick="changevideo()">Change video !</button>
+                        				<button type="button" class="btn btn-info" onclick="flipperY()">Mirror</button>
+                        				<input id="time1" type="number" value="0" name="time1" /> s
+                        				<button type="button" class="btn btn-info" onclick="setCurTime()">Jump</button>
+                        			</p>
+                        			<p>
+                        				Hide the default controls
+                        				<input id="hide" type="checkbox"  value="hide" onclick="toggleControls()"/>
+                        			</p>
 
 
                         
                  
-                    <script>
-                  var videoc = document.getElementById("idvideo");
-
-                  function toggleControls() {
-                    if (videoc.hasAttribute("controls")) {
-                       videoc.removeAttribute("controls")   
-                    } else {
-                       videoc.setAttribute("controls","controls")   
-                    }
-                  }
-                  </script>
+					        <script>
+					        	var videoc = document.getElementById("idvideo");
+					        	function toggleControls() {
+					        		if (videoc.hasAttribute("controls")) {
+					        			videoc.removeAttribute("controls")
+					        		}
+					        		else {
+					        			videoc.setAttribute("controls","controls")   
+					                    	}
+					                  }
+					        </script>
                          
                      
-               <script type="text/javascript">
-              var nvideo="https://ia802504.us.archive.org/4/items/SchoolStreamMobileAppForSchools/School%20Stream%20Mobile%20App%20for%20Schools.mp4" ;
+					        <script type="text/javascript">
+					        	var nvideo="https://ia802504.us.archive.org/4/items/SchoolStreamMobileAppForSchools/School%20Stream%20Mobile%20App%20for%20Schools.mp4" ;
+					
+					                function changevideo(){
+					                var oVideo=document.getElementById("idvideo");
+					                oVideo.setAttribute("src", nvideo);
+					                video.load();
+					                }
+					        </script>
+					                
+					        <script>
+					        	var vid = document.getElementById("idvideo");
+					            	function setCurTime() { 
+					              	t= document.getElementById("time1").value ;
+					                vid.currentTime=t;
+					            	} 
+					        </script> 
 
-                        function changevideo(){
-                        var oVideo=document.getElementById("idvideo");
-
-                        oVideo.setAttribute("src", nvideo);
-                            video.load();
-
-                        }
-                </script>
-                
-            <script>
-            var vid = document.getElementById("idvideo");
-            function setCurTime() { 
-
-              t= document.getElementById("time1").value ;
-                vid.currentTime=t;
-            } 
-            </script> 
-
-                 <script type="text/javascript">
-                     var prop=document.getElementById("idvideo");
-
-                    var flipped = 0;
-                    function flipperY() {
-                        if (flipped)
-                          
-                            //prop.style.WebkitTransform = "rotateY(0deg)";
-                            prop.style.WebkitTransform ="rotateY(0deg)";
-                        else
-                          
-                            prop.style.WebkitTransform = "rotateY(180deg)";
-                            // prop.style.WebkitTransform = "rotateY(1800deg)";
-
-
-                        flipped = !flipped ;
-                    }
-                </script>
- </form>
-            
-                </section>
+						<script type="text/javascript">
+					                var prop=document.getElementById("idvideo");
+					                var flipped = 0;
+					                function flipperY() {
+					                        if (flipped) {
+					                        
+					                            //prop.style.WebkitTransform = "rotateY(0deg)";
+					                            prop.style.WebkitTransform ="rotateY(0deg)";
+					                        }
+					                        else {
+					                        
+					                        prop.style.WebkitTransform = "rotateY(180deg)";
+					                            // prop.style.WebkitTransform = "rotateY(1800deg)";
+					                        flipped = !flipped ;
+					                    	}
+					        </script>
+ 					</form>
+ 				</section>
 	
          <!-- </aside> -->
-         </article>
+        	</article>
 
          <!-- Part offers-->
 			
-	    <section id="articles">
-
-            <article >
-             <section class="image">
-
-                
-
-                <link rel="stylesheet" property="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.css" type="text/css">
-                
-                <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.js"></script>
-                <div id="mydiv" class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true , "freeScroll": true, "wrapAround": true, "autoPlay": 2000}'>
-                    <img class="image1" src="offre1.jpg" alt="showing the first offer" onclick="location.href='page4.html';">
-                    <img class="image1" src="offre2.jpeg" alt="showing the second offer" onclick="location.href='page4.html';" >
-                    <img class="image1" src="offre3.jpg" alt="showing the third offer" onclick="location.href='page4.html';">
-
-                 
-
-                  </div>
-                    <div id="desc" >Looking for a new apartment or rental used to mean combing neighborhoods ? <br>looking for "for rent" signs and sifting through newspaper classifieds? <br> Now you can take your search on the go, or do it on your laptop or tablet  !
-                    </div>
-
-      
-           
-            <!-- Moving images -->          
-              
-                  
-
-                  
-           
-        </section>
-        
-    </article>
-           
+	<section id="articles">
+		<article>
+			<section class="image">
+				<link rel="stylesheet" property="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.css" type="text/css">
+				<script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.js"></script>
+		                
+		                <div id="mydiv" class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true , "freeScroll": true, "wrapAround": true, "autoPlay": 2000}'>
+					<img class="image1" src="offre1.jpg" alt="showing the first offer" onclick="location.href='page4.html';">
+					<img class="image1" src="offre2.jpeg" alt="showing the second offer" onclick="location.href='page4.html';" >
+					<img class="image1" src="offre3.jpg" alt="showing the third offer" onclick="location.href='page4.html';">
+				</div>
+                    		<div id="desc">
+                    			Looking for a new apartment or rental used to mean combing neighborhoods? <br>looking for "for rent" signs and sifting through newspaper classifieds? <br> Now you can take your search on the go, or do it on your laptop or tablet!
+                    		</div>
+			<!-- Moving images -->          
+			</section>
+		</article>
         </section>	
 	</section>
 
 			
-       <footer>
-        <div id="copyright">
-        <p>©Bouneb-Günther - 2016 EURECOM - WebInt</p> 
-        </div>          
-
-    </footer>
+	<footer>
+		<div id="copyright">
+        		<p>©Bouneb-Günther - 2016 EURECOM - WebInt</p> 
+        	</div>          
+	</footer>
     
 </body>
 </html>
