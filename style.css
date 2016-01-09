@@ -104,8 +104,18 @@ color: red;
 }
 
 #articles {
-width: 50%;
-position: right;
+/*width: 50%;
+position: right;*/
+
+border-left: 3px solid;
+margin-left: 2%;
+margin-right: 2%;
+text-align: center;
+background-color: rgba(255, 255, 255, 0.5);
+padding: 17px 20px 020px;
+margin-top: 5%;
+margin-bottom: 5%;
+border: 2px teal solid;
 
 }
 
