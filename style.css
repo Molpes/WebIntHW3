@@ -1,10 +1,12 @@
 html {
+	overflow: hidden;
 	height: 100%;
 	background-image: url("StudentsOutside.jpg");
 	background-attachment: fixed; */ /* Le fond restera fixe */
 }
 
 body {
+	overflow: auto;
 	min-height: 100%;
 	margin-left: 7%;
 	margin-right: 7%;
