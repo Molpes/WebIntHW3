@@ -1,3 +1,15 @@
+html {
+	background-image: url("StudentsOutside.jpg");
+	background-attachment: fixed; */ /* Le fond restera fixe */
+}
+
+body {
+	width: 600px;
+	margin: 20px auto;
+	/* center */ padding: 20px;
+	border: 1px solid black;
+	background: #eee;
+}
 
 /* wafa*/ 
 #logo1 {
@@ -77,16 +89,17 @@ display: flex;
 }*/
 
 
-
+/*
 body
 {
 background-image: url("StudentsOutside.jpg");
-background-attachment: fixed; /* Le fond restera fixe */
-font: 75% georgia, sans-serif;
+background-attachment: fixed; */ /* Le fond restera fixe */
+/*font: 75% georgia, sans-serif;
 line-height: 1.88889;
-
 }
+*/
 
+/*
 aside {
 width: 50% ;  
 text-align: justify;
@@ -95,12 +108,12 @@ padding: 10px 20px 10px;
 margin-top: 2.6% ;
 margin-bottom: 5%;
 border: 2px teal solid;
-
 }
+*/
+
 h3 {
 margin-top: 20%;
 color: red;
-
 }
 
 #articles {
