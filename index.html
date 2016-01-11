@@ -16,6 +16,22 @@
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
    
+			<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+
+
+	<script type="text/javascript">
+				$(document).ready(function(){
+					$(".FadeIn1b").hide();
+				
+					$(".FadeOut").click(function() {
+						$(".FadeOut").fadeOut("fast");
+						$(".FadeIn1b").fadeIn("3000");
+					});
+				});
+			
+	</script>
+
+
 
 </head>
 
@@ -25,7 +41,7 @@
         <img alt="mon logo" id="logo1" src="Eurecom.jpg"> <input id="Search"
         name="search" placeholder="Search.." type="text"> <button class=
         "btn btn-info" id="SearchB" type="button">Search ϙ</button> 
-	<img id="login" alt="logo of the website" id="AppName" src="applogo.png">
+	<!--<img id="login" alt="logo of the website" id="AppName" src="applogo.png">-->
 
 
 
@@ -60,9 +76,10 @@
 
 
 			
-	<!--<div class="container">-->	   
+	<!--<div class="container">  -->	   
           <div class="panel text-center">
-            <form method="GET" action="http://www.eurecom.fr/cgi-bin/echo.pl">
+	<img id="login" class="FadeOut" alt="logo of the website" id="AppName" src="applogo.png">
+            <form method="GET" action="http://www.eurecom.fr/cgi-bin/echo.pl" class="FadeIn1b">
                 <h2>Sign in</h2>
                 <p>Username : <br /><input id="usr" type="text" name="Username:"/></p> 
                 <p>Password : <br /><input id="pwd" type="password" name="Password:"/></p>
