@@ -3,64 +3,85 @@
 
 <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <title>Housing</title>
-        <link rel="shortcut icon" href="favicon.ico" />
+        <link href="map.css" rel="stylesheet" type="text/css">
+        
+	<title>Housing</title>
+	       <!--<link rel="shortcut icon" href="favicon.ico" /> -->
 
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
   		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+		
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-     
    
 
 </head>
 
 <body>
 	
-        <header>
+    <header>
+        <img alt="mon logo" id="logo1" src="Eurecom.jpg"> <input id="Search"
+        name="search" placeholder="Search.." type="text"> <button class=
+        "btn btn-info" id="SearchB" type="button">Search ϙ</button> 
+	<img id="login" alt="logo of the website" id="AppName" src="applogo.png">
 
-                        <img src="Eurecom.jpg" id="logo1" alt="mon logo"/>
-                        <input type="text" id="Search" name="search" placeholder="Search..">    
-                        <button type="button" class="btn btn-info" id="SearchB">  Search ϙ</button>
-                        <img src="applogo.png" id="AppName" alt="logo of the website"/>          
 
-                <nav>
-                    <ul>
-                        <li><a href="page1.html">Home</a></li>
-                        <li><a href="http://www.eurecom.fr/sites/www.eurecom.fr/files/documents/5-vie_etudiante/Stud_guidePratique/RESIDENCES%20FR_3.pdf">Help</a></li>
-                        <li><a href="http://www.eurecom.fr/en/student-life/survival-guide/housing">About</a></li>
-                    </ul>
-                </nav>  
-        </header>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="page2.html">Home</a>
+                </li>
+
+
+                <li>
+                    <a href=
+                    "http://www.eurecom.fr/sites/www.eurecom.fr/files/documents/5-vie_etudiante/Stud_guidePratique/RESIDENCES%20FR_3.pdf">
+                    Help</a>
+                </li>
+
+
+                <li>
+                    <a href=
+                    "http://www.eurecom.fr/en/student-life/survival-guide/housing">
+                    About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
 	
+
+
+
+
+
+
 			
-	   
-            <article id="sign">
+	<!--<div class="container">-->	   
+          <div class="panel text-center">
             <form method="GET" action="http://www.eurecom.fr/cgi-bin/echo.pl">
                 <h2>Sign in</h2>
-                <p>Username : <br /><input type="text" name="Username:"/></p> 
-                <p>Password : <br /><input type="password" name="Password:"/></p>
+                <p>Username : <br /><input id="usr" type="text" name="Username:"/></p> 
+                <p>Password : <br /><input id="pwd" type="password" name="Password:"/></p>
                 <br />
                 <input type="checkbox" id="IdCheckBox" value="valeur" /> 
                 <label for="IdCheckBox">Remember Me</label>
                 
                 <br /><br />
-                <button type="button" class="btn btn-info" onclick="location.href='page2.html';"> Sign in</button>
+                <button id="signinbtn" type="button" class="btn btn-info" > Sign in</button> <!-- onclick="location.href='page2.html';" -->
              </form>
-         </article>
-         	
-	
+        </div>         	
+	<!-- </div> -->
 
 			
-    <footer>
-        <div id="copyright">
-        <p>©Bouneb-Günther - 2016 EURECOM - WebInt</p> 
-        </div>   		
-
-    </footer>
-    
+	<footer>
+		<div class="panel">
+        		<p>©Bouneb-Günther - 2016 EURECOM - WebInt</p> 
+        	</div>
+	</footer>	
+       <script src="validate_user.js" type="text/javascript"></script>   
 </body>
 </html>
