@@ -1,6 +1,6 @@
 $(document).ready(function() {
 // global variable for wordcount
-var cc=0;
+var cc="0";
 
 // Function to get input value.
 $('#text_value').click(function() {
@@ -32,7 +32,7 @@ $('#text').val('');
 $('#textarea_reset').click(function() {
 $("#textarea").val('');
 $("#text").val('');
-cc = 0;
+cc = "0";
 });
 
 
