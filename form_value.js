@@ -46,7 +46,7 @@ $("#textarea").each(function() {
     $this.attr('maxlength', null);
     
     var el = $("<span class=\"character-count\">" + maxLength + "</span>");
-    el.insertAfter($this);
+    el.insertBefore($this);
     
     $this.bind('keyup', function() {
         var cc = $this.val().length;
