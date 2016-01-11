@@ -36,7 +36,29 @@ $('#textarea_reset').click(function() {
 $("textarea").val('');
 });
 
+//word count
+//http://jsfiddle.net/yzLbh/
 
+$("input[maxlength]").each(function() {
+    var $this = $(this);
+    var maxLength = parseInt($this.attr('maxlength'));
+    $this.attr('maxlength', null);
+    
+    var el = $("<span class=\"character-count\">" + maxLength + "</span>");
+    el.insertAfter($this);
+    
+    $this.bind('keyup', function() {
+        var cc = $this.val().length;
+        
+        el.text(maxLength - cc);
+        
+        if(maxLength < cc) {
+            el.css('color', 'red');
+        } else {
+            el.css('color', null);
+        }
+    });
+});
 
 
 
