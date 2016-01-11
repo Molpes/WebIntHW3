@@ -22,17 +22,22 @@ var name_value = $("#text").val();
 if(textarea_value=='') {
 alert("Enter Some Text In Textarea");
 }else{
-<!-- $("#i").click(function () { -->
+//$("#i").click(function () //
 		
 
     $('.main').before('<div class="main2"><p id="commentator">'+name_value+":"+'</p><p id="comment">'+textarea_value+'</p></div>'); 
     $('#textarea').val('');
 $('#text').val('');
 
-<!-- alert(textarea_value); -->
+// alert(textarea_value);
 }
 });
 $('#textarea_reset').click(function() {
 $("textarea").val('');
 });
+
+
+
+
+
 });
