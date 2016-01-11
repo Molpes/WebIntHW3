@@ -22,17 +22,44 @@ var name_value = $("#text").val();
 if(textarea_value=='') {
 alert("Enter Some Text In Textarea");
 }else{
-<!-- $("#i").click(function () { -->
+//$("#i").click(function () //
 		
 
     $('.main').before('<div class="main2"><p id="commentator">'+name_value+":"+'</p><p id="comment">'+textarea_value+'</p></div>'); 
     $('#textarea').val('');
 $('#text').val('');
 
-<!-- alert(textarea_value); -->
+// alert(textarea_value);
 }
 });
 $('#textarea_reset').click(function() {
 $("textarea").val('');
 });
+
+//word count
+//http://jsfiddle.net/yzLbh/
+
+$("input[maxlength]").each(function() {
+    var $this = $(this);
+    var maxLength = parseInt($this.attr('maxlength'));
+    $this.attr('maxlength', null);
+    
+    var el = $("<span class=\"character-count\">" + maxLength + "</span>");
+    el.insertAfter($this);
+    
+    $this.bind('keyup', function() {
+        var cc = $this.val().length;
+        
+        el.text(maxLength - cc);
+        
+        if(maxLength < cc) {
+            el.css('color', 'red');
+        } else {
+            el.css('color', null);
+        }
+    });
+});
+
+
+
 });
