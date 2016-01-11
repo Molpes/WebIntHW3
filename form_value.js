@@ -40,7 +40,7 @@ $("textarea").val('');
 //http://jsfiddle.net/yzLbh/
 //input[maxlength]
 
-$("#wordcount").each(function() {
+$("#textarea").each(function() {
     var $this = $(this);
     var maxLength = parseInt($this.attr('maxlength'));
     $this.attr('maxlength', null);
