@@ -1,108 +1,135 @@
-html {
-	/*height: 100%;*/
-	background-image: url("StudentsOutside.jpg");
-	background-attachment: fixed; */ /* Le fond restera fixe */
-}
+@import  "http://fonts.googleapis.com/css?family=Alegreya+Sans+SC";
 
 body {
-	/*min-height: 100%;*/
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	/*margin: center;*/ /*padding: 20px;*/
-	border: 3px solid black;
-	/*background-color: rgba(255, 255, 255, 0.5);*/
-	opacity: 0.4;
+/*height: 100%;*/
+    background-image: url(StudentsOutside.jpg);
+    background-attachment: fixed;
+    /*lefondresterafixe*/
+    border: 8px solid #000;
 }
 
-/* wafa*/ 
+/*exbody { */
+/*min-height: 100%;*/
+/*width: 80%;*/
+/*margin-left: auto;
+	margin-right: auto;*/
+/*margin: center;*/
+/*padding: 20px;*/
+/*border: 8px solid black;*/
+/*background-color: rgba(255, 255, 255, 0.5);*/
+/*opacity: 0.4;*/
+/*}*/
+/*****************************
+**** bootstrap customized ****
+******************************/
+.panel {
+    background-color: rgba(255,255,255,0.8) !important;
+    border: 4px teal solid;
+}
+
+.panel-footer {
+    background-color: #000;
+    opacity: .8 !important;
+}
+
+.navbar {
+    opacity: .8;
+}
+
+footer .panel {
+    text-align: center;
+    background-color: #000;
+    padding: 30px 20px 20px 5px;
+/*margin-top: 0%;*/
+    opacity: .6;
+}
+
+footer .panel p {
+    color: #fff;
+}
+
+/* wafa*/
 #logo1 {
-width: 150px;
-margin-left: 10%;
+    width: 100px;
+/*margin-left: 10%;*/
+}
+
+#appName {
+    width: 20px;
 }
 
 #SearchB {
+    margin-left: 1%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+/*#Search {
 margin-left: 1%;
-border: 2px solid #ccc;
-border-radius: 10px;
-}
-
-#Search {
-margin-left: 20%;
-}
-
+}*/
 #AppName {
-text-align: right;
-margin-left: 20%;
-width: 150px;
+    text-align: right;
+    margin-left: 20%;
+    width: 150px;
 }
 
-header {
+/*header {
 position: center;
 width: 100%;
 background-color: rgba(255, 255, 255, 0.5);
 border: 2px teal solid;
 margin-left: 2px;
 margin-right: 2px;
-}
-
+}*/
 nav {
-position: right;
-margin-right: 10%;
-font-weight: normal;
-text-transform: uppercase;
-display: inline-block;
-text-align: right;
+    position: right;
+    margin-right: 10%;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: right;
 }
 
 nav ul {
-list-style-type: none;
-
+    list-style-type: none;
 }
 
 nav li {
-display: inline-block;
-margin-right: 15px;
-
+    display: inline-block;
+    margin-right: 15px;
 }
 
 nav a {
-font-size: 1.3em;
-color: #181818;
-padding-bottom: 3px;
-text-decoration: none;
-
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
 }
 
 nav a:hover {
-color: teal;
-border-bottom: 3px solid teal;
-
-
+    color: teal;
+    border-bottom: 3px solid teal;
 }
 
 #bloc_page {
-width: 900px;
-margin: auto;
-
+    width: 900px;
+    margin: auto;
 }
 
 /*
 #artc {
 display: flex;
 }*/
-
-
 /*
 body
 {
 background-image: url("StudentsOutside.jpg");
-background-attachment: fixed; */ /* Le fond restera fixe */
+background-attachment: fixed; */
+/* Le fond restera fixe */
 /*font: 75% georgia, sans-serif;
 line-height: 1.88889;
 }
 */
-
 /*
 aside {
 width: 50% ;  
@@ -114,95 +141,81 @@ margin-bottom: 5%;
 border: 2px teal solid;
 }
 */
-
 h3 {
-margin-top: 20%;
-color: red;
+    margin-top: 20%;
+    color: red;
 }
 
 #articles {
 /*width: 50%;
 position: right;*/
-
-border-left: 3px solid;
-margin-left: 2%;
-margin-right: 2%;
-text-align: center;
-background-color: rgba(255, 255, 255, 0.5);
-padding: 17px 20px 020px;
-margin-top: 5%;
-margin-bottom: 5%;
-border: 2px teal solid;
-
+    border-left: 3px solid;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    padding: 17px 20px 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 2px teal solid;
 }
-
 
 #desc {
-margin-top: 5%;
-margin-bottom: 5%;
-margin-right: 5%;
-margin-left: 5%;
-color: white;
-padding: 15px;
-text-align: center;
-background-color: rgba(0, 0, 0, 0.4);
-
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.4);
 }
 
-#video{
-
+#video {
 }
-
 
 article input {
-clear: both;
-border: 1px black; 
-border-radius:5px; 
-text-align:center; 
-box-shadow:0 0 6px;
-
+    clear: both;
+    border: 1px #000;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 6px;
 }
-
-
-
 
 article {
-border-left: 3px solid;
-margin-left: 2%;
-margin-right: 2%;
-text-align: center;
-background-color: rgba(255, 255, 255, 0.5);
-padding: 17px 20px 020px;
-margin-top: 5%;
-margin-bottom: 5%;
-border: 2px teal solid;
-
+    border-left: 3px solid;
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+    background-color: rgba(255,255,255,0.5);
+    padding: 17px 20px 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 2px teal solid;
 }
-
 
 article h2 {
-font-family: Cooper Black ;
+    font-family: Cooper #000;
 }
+
 form p {
-font-family: Cooper Black ;
+    font-family: Cooper #000;
 }
+
 .image1 {
-
-width: 50%; /* half-width */
-margin-right: 20px;
-margin-top: 50px;
-margin-bottom: 40px;
-
-height:200px;
+    width: 30%;
+/* half-width */
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    height: 300px;
 }
-video {	
 
-
--webkit-transition-property: -webkit-transform;
--webkit-transition-duration: 3s;
-
-
+video {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 3s;
 }
+
 /*
 #button-next {
 width: 350px;
@@ -217,56 +230,34 @@ background-image: url("previous.jpg");
 
 }*/
 #button-next {
-
-background color: teal ;
-clear: both;
-border: 1px black; 
-border-radius:5px; 
-text-align:center; 
-box-shadow:0 0 6px;
+    backgroundcolor: teal;
+    clear: both;
+    border: 1px #000;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 6px;
 }
 
 #button-previous {
-background color: teal ;	
-clear: both;
-border: 1px black; 
-border-radius:5px; 
-text-align:center; 
-box-shadow:0 0 6px;
-
+    backgroundcolor: teal;
+    clear: both;
+    border: 1px #000;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 6px;
 }
 
-#copyright 
-{ 	
-text-align: center;
-background-color: black ;
-padding: 17px 20px 020px;
-margin-top: 0% ;
-opacity: 0.5 ;
-}
-
-#copyright p {
-color: white ;
-}	
-
-
-
-/* new part*/ 
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC);
-
-
+/* new part*/
 h4 {
     font-size: 21px;
     border-radius: 5px;
     margin: 0 auto;
     text-align: center;
     background: #d2d2d2;
-    color: white;
+    color: #fff;
     font-weight: 700;
     padding: 3px 0;
 }
-
-
 
 span {
     display: block;
@@ -282,10 +273,8 @@ span {
     left: 3px;
 }
 
-
-.programs,
-.courses {
-    margin: 8px 0 0 0;
+.programs,.courses {
+    margin: 8px 0 0;
 }
 
 .programs {
@@ -296,15 +285,15 @@ span {
 .programs button {
     outline: none;
     margin-bottom: 0;
-    background: whitesmoke;
+    background: #f5f5f5;
     width: 50%;
     height: auto;
-    font-weight: normal;
+    font-weight: 400;
     border: 1px solid #ededed;
-    color: #000000;
+    color: #000;
     font-size: 14px;
     padding: 4px 0;
-    text-shadow: 0px 0px 0px #2f6627;
+    text-shadow: 0 0 0 #2f6627;
 }
 
 .programs button:hover {
@@ -312,15 +301,15 @@ span {
 }
 
 .programs button.active {
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5) inset, 0px 0px 1px transparent;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5) inset,0 0 1px transparent;
     background: #3a9fbf;
-    color: white;
+    color: #fff;
 }
 
 .courses {
     margin-bottom: 15px;
     font-size: 0;
-    background: whitesmoke;
+    background: #f5f5f5;
 }
 
 .courses li {
@@ -331,25 +320,29 @@ span {
     margin: 0 2%;
 }
 
+.courses .total {
+    border: 3px solid #000;
+}
+
 .courses a {
     display: block;
     height: 60px;
     margin: 15px 0;
     padding-top: 12.5px;
-    background: whitesmoke;
-    color: black;
-    border: 1px solid white;
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
     -webkit-transition: all .4s ease;
-            transition: all .4s ease;
+    transition: all .4s ease;
 }
+
 .courses img {
-	width:220px;
-	height:228px;
-	
-	  display: block;
+    width: 220px;
+    height: 228px;
+    display: block;
     margin: 15px 0;
-    padding-top: 12.5px;
-    border: 1px solid white;
+/*padding-top: 12.5px;*/
+    border: 1px solid #000;
 }
 
 .courses a:hover {
@@ -360,18 +353,15 @@ span {
     display: none;
 }
 
-.p, .p a {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  text-align: center;
+.p,.p a {
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    text-align: center;
 }
-
 
 /* MEDIA QUERIES STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 @media only screen and (min-width: 750px) {
-
     .container {
         width: 95%;
     }
@@ -384,17 +374,14 @@ span {
     .courses a:hover {
         background: #EBEBEB;
         -webkit-transform: scale(1.15);
-            -ms-transform: scale(1.15);
-                transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        transform: scale(1.15);
     }
 
     h4 {
         width: 50%;
         margin-top: 12px;
-
     }
-
-   
 
     .programs {
         margin-bottom: 0;
@@ -408,7 +395,21 @@ span {
     .courses li {
         width: 21%;
     }
-
 }
 
+/*****************************************************
+*************** Flickity Gallery *********************
+*****************************************************/
+/* brighten selected image */
+.image1.is-selected img {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: none;
+    filter: none;
+}
 
+/* page4 */
+#searchContinue:hover {
+    background: red;
+}

@@ -25,7 +25,7 @@ alert("Enter Some Text In Textarea");
 <!-- $("#i").click(function () { -->
 		
 
-    $('.main').before('<div class="main2"><p id="commentator">'+name_value+":"+'</p><p id="comment">'+textarea_value+'</p></div>'); 
+    $('.main').before('<div class="main2"><h1>'+name_value+'</h1><p>'+textarea_value+'</p></div>'); 
     $('#textarea').val('');
 $('#text').val('');
 

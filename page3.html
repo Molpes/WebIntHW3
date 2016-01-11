@@ -1,145 +1,172 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
 <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <title>Housing</title>
-        <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="utf-8">
+    <link href="map.css" rel="stylesheet" type="text/css">
 
-<link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
-<link rel="stylesheet prefetch" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/skeleton.2.02.css">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-     
-   
-
+    <title>Housing</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet prefetch">
+    <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/skeleton.2.02.css" rel="stylesheet prefetch">
 </head>
 
 <body>
-	
-        <header>
+    
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script> 
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script>
 
-                        <img src="Eurecom.jpg" id="logo1" alt="mon logo"/>
-                        <input type="text" id="Search" name="search" placeholder="Search..">    
-                        <button type="button" class="btn btn-info" id="SearchB">  Search ϙ</button>
-                        <img src="applogo.png" id="AppName" alt="logo of the website"/>          
+    <header>
+        <img alt="mon logo" id="logo1" src="Eurecom.jpg"> <input id="Search" name="search" placeholder="Search.." type=
+        "text"> <button class="btn btn-info" id="SearchB" type="button">Search ϙ</button> <img alt=
+        "logo of the website" id="AppName" src="applogo.png">
 
-                <nav>
-                    <ul>
+        <nav>
+            <ul>
+                <li>
+                    <a href="page2.html">Home</a>
+                </li>
 
-                        <li><a href="page2.html">Home</a></li>
-                        <li><a href="http://www.eurecom.fr/sites/www.eurecom.fr/files/documents/5-vie_etudiante/Stud_guidePratique/RESIDENCES%20FR_3.pdf">Help</a></li>
-                        <li><a href="http://www.eurecom.fr/en/student-life/survival-guide/housing">About</a></li>
-                    </ul>
-                </nav>  
-        </header>
 
-	
-			
-	   
-      <article id="sign">
-            <section>
-                <div class="wrap">
-                  <div class="container">
-                    <div class="row">
-                      <div class="twelve columns">
-                        <h4>Book Faster!<br>
-                        Filters can help you to save time when choosing your stay! </h4>
-                      </div>
-                    </div><!-- end of row -->
+                <li>
+                    <a href=
+                    "http://www.eurecom.fr/sites/www.eurecom.fr/files/documents/5-vie_etudiante/Stud_guidePratique/RESIDENCES%20FR_3.pdf">
+                    Help</a>
+                </li>
 
-                    <div class="row">
-                      <div class="twelve columns">
+
+                <li>
+                    <a href="http://www.eurecom.fr/en/student-life/survival-guide/housing">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <div class="panel">
+            <div class="container">
+                <h4>Book Faster!<br>
+                Filters can help you to save time when choosing your stay!</h4>
+
+
+                <div class="row">
+                    <div class="twelve columns">
                         <div class="programs">
-                          <button class="filter-btn" data-filter="all">All</button>
-                          <button class="filter-btn" data-filter=".undergraduate">Villa</button>
-                          <button class="filter-btn" data-filter=".graduate">Apartement</button>
-                          <button class="filter-btn" data-filter=".phd"> Studio</button>
+                            <button class="filter-btn" data-filter="all">All</button> <button class="filter-btn"
+                            data-filter=".undergraduate">Villa</button> <button class="filter-btn" data-filter=
+                            ".graduate">Apartement</button> <button class="filter-btn" data-filter=
+                            ".phd">Studio</button>
                         </div>
-                      </div>
-                    </div><!-- end of row -->
+                    </div>
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </div>
+        <!-- end of panel -->
 
-                    <div class="row">
-                      <div class="columns twelve">
-                        <h4>Sort By : </h4>
-                      </div>
-                    </div><!-- end of row -->
 
-                    <div class="row">
-                      <div class="columns twelve">
+        <div class="panel">
+            <div class="container">
+                <div class="row">
+                    <div class="columns twelve">
+                        <h4>Sort By :</h4>
+                    </div>
+                </div>
+                <!-- end of row -->
+
+
+                <div class="row">
+                    <div class="columns twelve">
                         <div class="programs">
-                          <button class="sort-btn" data-sort="default:asc">Price</button>
-                          <button class="sort-btn" data-sort="random">Surface</button>
-                          <button class="sort-btn" data-sort="order:asc">Distance from Eurecom</button>
-                          <button class="sort-btn" data-sort="year:desc order:desc">Number of bedrooms</button>
+                            <button class="sort-btn" data-sort="default:asc">Price</button> <button class="sort-btn"
+                            data-sort="random">Surface</button> <button class="sort-btn" data-sort="order:asc">Distance
+                            from Eurecom</button> <button class="sort-btn" data-sort="year:desc order:desc">Number of
+                            bedrooms</button>
                         </div>
-                      </div>
-                    </div><!-- end of row -->
+                    </div>
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </div>
+        <!-- end of panel -->
 
-                    <div class="row">
-                      <div class="twelve columns">
+
+        <div class="panel">
+            <div class="container">
+                <div class="row">
+                    <div class="twelve columns">
                         <h4>6 properties are available !</h4>
-                      </div>
-                    </div><!-- end of row -->
+                    </div>
+                </div>
+                <!-- end of row -->
 
-                    <div class="row">
-                      <div class="twelve columns">
+
+                <div class="row">
+                    <div class="twelve columns">
                         <ul class="courses" id="mix-wrapper">
-                          
-                         
-                          <li class="mix-target undergraduate" data-order="12" data-year="4">
-                            <img src="offre7.jpg" alt="hierSollteeeinFotostehen" onclick="jQuery_modal(this)">
-                             <a href="page4.html">Villa In Nice Available</a>
-                        </li>
-
-                          <li class="mix-target undergraduate" data-order="10" data-year="5">
-                            <img src="offre8.jpg" alt="hierSollteeeinFotostehen" onclick="jQuery_modal(this)">
-                            <a href="page4.html"> Villa in Maeva Les Jardins </a>
+                            <li class="mix-target undergraduate" data-order="12" data-year="4">
+                                <img alt="hierSollteeeinFotostehen" src="offre7.jpg"> <a href="page4.html">Villa In
+                                Nice Antibes</a>
                             </li>
 
-                          <li class="mix-target phd" data-order="13" data-year="3">
-                            <img src="offre9.jpg" alt="hierSollteeeinFotostehen"  onclick="jQuery_modal(this)">
-                            <a href="page4.html">Best Offer Studio Antibes</a></li>
 
-                          <li class="mix-target graduate" data-order="8" data-year="1">
-                             <img src="offre4.jpg" alt="hierSollteeeinFotostehen"  onclick="jQuery_modal(this)">
-                            <a href="page4.html">Apartement Pierre & Vacances</a>
-                           </li>
+                            <li class="mix-target undergraduate" data-order="10" data-year="5">
+                                <img alt="hierSollteeeinFotostehen" onclick="jQuery_modal(this)" src="offre8.jpg">
+                                <a href="page4.html">Villa in Maeva Les Jardins</a>
+                            </li>
 
-                          <li class="mix-target graduate" data-order="3" data-year="2">
-                         <img src="offre5.jpg" alt="hierSollteeeinFotostehen"  onclick="jQuery_modal(this)">
-                            <a href="page4.html"> Apartement in Monaco </a> </li>
 
-                          <li class="mix-target phd" data-order="15" data-year="4">
-                            <img src="offre6.jpg" alt="hierSollteeeinFotostehen" onclick="jQuery_modal(this)">
-                            <a href="page4.html">Studio in Nice</a>
+                            <li class="mix-target phd" data-order="13" data-year="3">
+                                <img alt="hierSollteeeinFotostehen" onclick="jQuery_modal(this)" src="offre9.jpg">
+                                <a href="page4.html">Best Offer Studio Antibes</a>
+                            </li>
+
+
+                            <li class="mix-target graduate" data-order="8" data-year="1">
+                                <img alt="hierSollteeeinFotostehen" onclick="jQuery_modal(this)" src="offre4.jpg">
+                                <a href="page4.html">Apartement Pierre & Vacances</a>
+                            </li>
+
+
+                            <li class="mix-target graduate" data-order="3" data-year="2">
+                                <img alt="hierSollteeeinFotostehen" onclick="jQuery_modal(this)" src="offre5.jpg">
+                                <a href="page4.html">Apartement in Monaco</a>
+                            </li>
+
+
+                            <li class="mix-target phd" data-order="15" data-year="4">
+                                <img alt="hierSollteeeinFotostehen" onclick="jQuery_modal(this)" src="offre6.jpg">
+                                <a href="page4.html">Studio in Nice</a>
                             </li>
                         </ul>
-                      </div>
-                    </div><!-- end of row -->   
-                  </div><!-- end of container -->
-                </div><!-- end of wrap -->
-                    
-                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-                    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-                    <script src="TEST2.js" type="text/javascript"></script>
-                    <script src="jQuery_modal.js"></script>
-                   </section>
-      </article>
-         	
-	
+                    </div>
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </div>
+        <!-- end of container -->
+        <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+        <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js">
+        </script> 
+        <script src="TEST2.js" type="text/javascript">
+        </script> 
+        <script src="jQuery_modal.js">
+        </script>
+    </section>
 
-			
+
     <footer>
-        <div id="copyright">
-        <p>©Bouneb-Günther - 2016 EURECOM - WebInt</p> 
-        </div>   		
-
+        <div class="panel">
+            <p>©Bouneb-Günther - 2016 EURECOM - WebInt</p>
+        </div>
     </footer>
-    
 </body>
 </html>
