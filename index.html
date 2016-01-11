@@ -1,32 +1,37 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
-        <meta charset="utf-8">
-        <link href="map.css" rel="stylesheet" type="text/css">
-        
-	<title>Housing</title>
-	       <!--<link rel="shortcut icon" href="favicon.ico" /> -->
 
+    <meta charset="utf-8">
+    <link href="map.css" rel="stylesheet" type="text/css">
+    <!-- external flickity.css -->
+    <link rel="stylesheet" href="flickity.css">
 
+        <title>Housing</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+
+<!-- bootstrap for button -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-		
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-   
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+        <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.js"></script> 
+               
 
 </head>
 
 <body>
-	
+    
     <header>
-        <img alt="mon logo" id="logo1" src="Eurecom.jpg"> <input id="Search"
-        name="search" placeholder="Search.." type="text"> <button class=
-        "btn btn-info" id="SearchB" type="button">Search ϙ</button> 
-	<img id="login" alt="logo of the website" id="AppName" src="applogo.png">
-
+        <img alt="mon logo" id="logo1" src="Eurecom.jpg"> 
+        <input id="Search"
+        name="search" placeholder="Search.." type="text">  <button type="button" class="btn btn-info" id="SearchB" onclick="location.href='page3.html';">  Search ϙ</button>
+    <img alt="logo of the website" id="AppName" src="applogo.png">
 
 
         <nav>
@@ -51,15 +56,6 @@
             </ul>
         </nav>
     </header>
-
-	
-
-
-
-
-
-
-			
 	<!--<div class="container">-->	   
           <div class="panel text-center">
             <form method="GET" action="http://www.eurecom.fr/cgi-bin/echo.pl">
@@ -78,7 +74,7 @@
 
 			
 	<footer>
-		<div class="panel">
+		<div id="copyright">
         		<p>©Bouneb-Günther - 2016 EURECOM - WebInt</p> 
         	</div>
 	</footer>	

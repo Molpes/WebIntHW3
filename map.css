@@ -6,79 +6,71 @@ body {
     background-attachment: fixed;
     /*lefondresterafixe*/
     border: 8px solid #000;
+        line-height: 1.88889;
+         font-family: Cooper Black ;
+
 }
 
-/*exbody { */
-/*min-height: 100%;*/
-/*width: 80%;*/
-/*margin-left: auto;
-	margin-right: auto;*/
-/*margin: center;*/
-/*padding: 20px;*/
-/*border: 8px solid black;*/
-/*background-color: rgba(255, 255, 255, 0.5);*/
-/*opacity: 0.4;*/
-/*}*/
 /*****************************
 **** bootstrap customized ****
 ******************************/
 .panel {
     background-color: rgba(255,255,255,0.8) !important;
     border: 4px teal solid;
+    font-family: Cooper Black ;
+
 }
 
-.panel .panel-footer {
-    background-color: rgba(255,255,255,0.8)!important;
- 
-}
+
 
 .navbar {
     opacity: .8;
 }
 
-footer .panel {
-    text-align: center;
-	
-    /*background-color: #000;*/
-    padding: 30px 20px 20px 5px;
-/*margin-top: 0%;*/
-    /*opacity: .8;*/
-}
 
-footer .panel p {
-    color: black;
-}
 
 /* wafa*/
 #logo1 {
-    width: 150px;
+    width: 10%;
     margin-left: 10%;
 }
 
-#appName {
-    width: 20px;
-}
+
 
 #SearchB {
-    /*margin-left: 1%;*/
+    width: 10%;
+    margin-left: 2%;
+    margin-right: 15%;
     border: 2px solid #ccc;
     border-radius: 10px;
 }
 
 #Search {
-   /* margin-left: 20%;*/
+    width: 15%;
+   margin-left: 15%;
+
+}
+#SearchCenter{
+    margin-left: 30%;
+    width: 20%;
+    height: 2%;
+}
+#SearchBC{
+   width: 10%;
+    height: 2%;
 }
 
 #AppName {
-    text-align: right;
-    margin-left: 20%;
-    width: 150px;
+    width: 10%;
+    margin-right: 5% ;
 }
 
 header {
     position: center;
     width: 100%;
     background-color: rgba(255,255,255,0.8);
+    font-family: Cooper Black ;
+
 /*border: 2px teal solid;*/
 }
 
@@ -112,32 +104,9 @@ nav a:hover {
     border-bottom: 3px solid teal;
 }
 
-#bloc_page {
-    width: 900px;
-    margin: auto;
-}
-/*
-#artc {
-    display: flex;
-}
-*/
-body {
-    background-image: url(StudentsOutside.jpg);
-    background-attachment: fixed;
-/* Le fond restera fixe */
-    font: 75% georgia,sans-serif;
-    line-height: 1.88889;
-}
-/*
-aside {
-    width: 50%;
-    text-align: justify;
-    background-color: rgba(255,255,255,0.5);
-    padding: 10px 20px;
-    margin-top: 2.6%;
-    margin-bottom: 5%;
-}
-*/
+
+
+
 h3 {
     margin-top: 20%;
     font-family: Cooper #000;
@@ -242,7 +211,10 @@ form p {
     background-color: #000;
     padding: 17px 20px 20px;
     margin-top: 0;
-    opacity: .5;
+    opacity: .6;
+    width: 100%;
+    font-family: Cooper Black ;
+
 }
 
 #copyright p {
