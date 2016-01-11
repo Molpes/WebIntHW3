@@ -1,3 +1,6 @@
+// global variable for wordcount
+var cc=0;
+
 $(document).ready(function() {
 // Function to get input value.
 $('#text_value').click(function() {
@@ -8,12 +11,6 @@ alert("Enter Some Text In Input Field");
 alert(text_value);
 }
 });
-
-
-$('#text_reset').click(function() {
-$("#text").val('');
-});
-
 
 // To get value of textarea.
 $('#textarea_value').click(function() {
@@ -32,9 +29,16 @@ $('#text').val('');
 // alert(textarea_value);
 }
 });
+
+// reset delete vlaues in form
 $('#textarea_reset').click(function() {
 $("textarea").val('');
+$("#text").val('');
+cc = 0;
 });
+
+
+
 
 //word count
 //http://jsfiddle.net/yzLbh/
