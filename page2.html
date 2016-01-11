@@ -1,159 +1,183 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
 <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css" type="text/css">
-        <title>Housing</title>
-        <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="utf-8">
+    <link href="map.css" rel="stylesheet" type="text/css">
+    <!-- external flickity.css -->
+    <link href="flickity.css" rel="stylesheet">
 
-<!-- bootstrap for button -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-     
-               
-
+    <title>Housing</title>
+    <link href="favicon.ico" rel="shortcut icon"><!-- bootstrap for button -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href=
+    "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel=
+    "stylesheet">
+    <link href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+    rel="stylesheet">
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+    <script src=
+    "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+    </script>
+    <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.js">
+    </script>
 </head>
 
-<body onload = "startTimer()">
-
+<body>
         <header>
+            <img alt="mon logo" id="logo1" src="Eurecom.jpg"> <input id=
+            "Search" name="search" placeholder="Search.." type="text">
+            <button class="btn btn-info" id="SearchB" type="button">Search
+            ϙ</button> <img alt="logo of the website" id="AppName" src=
+            "applogo.png">
 
-                        <img src="Eurecom.jpg" id="logo1" alt="mon logo"/>
-  						<input type="text" id="Search" name="search" placeholder="Search..">	
-  					    <button type="button" class="btn btn-info" id="SearchB" onclick="location.href='page3.html';">  Search ϙ</button>
-                        <img src="applogo.png" id="AppName" alt="logo of the website"/>          
+            <nav>
+                <ul>
+                    <li><a href="page2.html">Home</a>
+                    </li>
 
-		        <nav>
-		        	<ul>
-            
-		        		<li><a href="page2.html">Home</a></li>
-	 				<li><a href="http://www.eurecom.fr/sites/www.eurecom.fr/files/documents/5-vie_etudiante/Stud_guidePratique/RESIDENCES%20FR_3.pdf">Help</a></li>
-	 				<li><a href="http://www.eurecom.fr/en/student-life/survival-guide/housing">About</a></li>
-		            	</ul>
-		        </nav>  
+
+                    <li><a href=
+                    "http://www.eurecom.fr/sites/www.eurecom.fr/files/documents/5-vie_etudiante/Stud_guidePratique/RESIDENCES%20FR_3.pdf">
+                    Help</a>
+                    </li>
+
+
+                    <li><a href=
+                    "http://www.eurecom.fr/en/student-life/survival-guide/housing">
+                    About</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-
-
-
-	<!-- <section id="artc"> -->
         <!-- Part video -->
-        	<!-- article HAD BEEN ASIDE BEFORE!!! <aside> -->
-        	<!-- <article> -->
-        	<div id="articles">
-          		<h3> Best tips from the Experts ! </h3>
-          
-        		 <!-- youtube video-->
-        			<section>
-        				<video controls poster="Video.jpg" width="560" height="315" id="idvideo">
-              				<source src="https://ia902609.us.archive.org/29/items/role_commissionsscolaires/role_commissionsscolaires-ES.mp4">
-        				<source src="https://ia902609.us.archive.org/29/items/role_commissionsscolaires/role_commissionsscolaires-ES.ogv">
-        				</video>
-          			</section>
 
-                		<section>
-                			<form method="get">
-                				<p>
-                					<button type="button" class="btn btn-info" onclick="changevideo()">Change video !</button>
-                        				<button type="button" class="btn btn-info" onclick="flipperY()">Mirror</button>
-                        				<input id="time1" type="number" value="0" name="time1" /> s
-                        				<button type="button" class="btn btn-info" onclick="setCurTime()">Jump</button>
-                        			</p>
-                        			<p>
-                        				Hide the default controls
-                        				<input id="hide" type="checkbox"  value="hide" onclick="toggleControls()"/>
-                        			</p>
+      <div class="container">
+        <div class="panel text-center">
+            <h3>Best tips from the Experts !</h3>
+            <!-- youtube video-->
 
 
-                        
-                 
-					        <script>
-					        	var videoc = document.getElementById("idvideo");
-					        	function toggleControls() {
-					        		if (videoc.hasAttribute("controls")) {
-					        			videoc.removeAttribute("controls")
-					        		}
-					        		else {
-					        			videoc.setAttribute("controls","controls")   
-					                    	}
-					                  }
-					        </script>
-                         
-                     
-					        <script type="text/javascript">
-					        	var nvideo="https://ia802504.us.archive.org/4/items/SchoolStreamMobileAppForSchools/School%20Stream%20Mobile%20App%20for%20Schools.mp4" ;
-					
-					                function changevideo(){
-					                var oVideo=document.getElementById("idvideo");
-					                oVideo.setAttribute("src", nvideo);
-					                video.load();
-					                }
-					        </script>
-					                
-					        <script>
-					        	var vid = document.getElementById("idvideo");
-					            	function setCurTime() { 
-					              	t= document.getElementById("time1").value ;
-					                vid.currentTime=t;
-					            	} 
-					        </script> 
+            <section>
+                <video controls="" height="315" id="idvideo" poster="Video.jpg"
+                width="560"><source src=
+                "https://ia902609.us.archive.org/29/items/role_commissionsscolaires/role_commissionsscolaires-ES.mp4">
+                <source src=
+                "https://ia902609.us.archive.org/29/items/role_commissionsscolaires/role_commissionsscolaires-ES.ogv">
+                </video>
+            </section>
 
-						<script type="text/javascript">
-					                var prop=document.getElementById("idvideo");
-					                var flipped = 0;
-					                function flipperY() {
-					                        if (flipped) {
-					                        
-					                            //prop.style.WebkitTransform = "rotateY(0deg)";
-					                            prop.style.WebkitTransform ="rotateY(0deg)";
-					                        }
-					                        else {
-					                        
-					                        prop.style.WebkitTransform = "rotateY(180deg)";
-					                            // prop.style.WebkitTransform = "rotateY(1800deg)";
-					                        flipped = !flipped ;
-					                    	}
-					        </script>
- 					</form>
- 				</section>
-	
-         	<!-- </aside> -->
-        	<!-- </article> -->
-		</div>
 
-         <!-- Part offers-->
-			
-		
-		<div id="articles">
-			<!-- <article> -->
-				<section class="image">
-					<link rel="stylesheet" property="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.css" type="text/css">
-					<script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.js"></script>
-			                
-			                <div id="mydiv" class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true , "freeScroll": true, "wrapAround": true, "autoPlay": 2000}'>
-						<img class="image1" src="offre1.jpg" alt="showing the first offer" onclick="location.href='page4.html';">
-						<img class="image1" src="offre2.jpeg" alt="showing the second offer" onclick="location.href='page4.html';" >
-						<img class="image1" src="offre3.jpg" alt="showing the third offer" onclick="location.href='page4.html';">
-					</div>
-	                    		<div id="desc">
-	                    			Looking for a new apartment or rental used to mean combing neighborhoods? <br>looking for "for rent" signs and sifting through newspaper classifieds? <br> Now you can take your search on the go, or do it on your laptop or tablet!
-	                    		</div>
-				<!-- Moving images -->          
-				</section>
-			<!-- </article> -->
-		</div> <!-- closing div articles -->	
-	        	
-	<!-- </section> -->
+            <section>
+                <form method="get">
+                    <p><button class="btn btn-info" onclick="changevideo()"
+                    type="button">Change video !</button> <button class=
+                    "btn btn-info" onclick="flipperY()" type=
+                    "button">Mirror</button> <input id="time1" name="time1"
+                    type="number" value="0"> s <button class="btn btn-info"
+                    onclick="setCurTime()" type="button">Jump</button></p>
 
-			
-	<footer>
-		<div id="copyright">
-        		<p>©Bouneb-Günther - 2016 EURECOM - WebInt</p> 
-        	</div>          
-	</footer>
-    
+
+                    <p>Hide the default controls <input id="hide" onclick=
+                    "toggleControls()" type="checkbox" value="hide"></p>
+                    <script>
+                                var videoc = document.getElementById("idvideo");
+                                function toggleControls() {
+                                    if (videoc.hasAttribute("controls")) {
+                                        videoc.removeAttribute("controls")
+                                    }
+                                    else {
+                                        videoc.setAttribute("controls","controls")   
+                                            }
+                                      }
+                    </script> 
+                    <script type="text/javascript">
+                                var nvideo="https://ia802504.us.archive.org/4/items/SchoolStreamMobileAppForSchools/School%20Stream%20Mobile%20App%20for%20Schools.mp4" ;
+
+                                    function changevideo(){
+                                    var oVideo=document.getElementById("idvideo");
+                                    oVideo.setAttribute("src", nvideo);
+                                    video.load();
+                                    }
+                    </script> 
+                    <script>
+                                var vid = document.getElementById("idvideo");
+                                    function setCurTime() { 
+                                    t= document.getElementById("time1").value ;
+                                    vid.currentTime=t;
+                                    } 
+                    </script> 
+                    <script type="text/javascript">
+                                    var prop=document.getElementById("idvideo");
+                                    var flipped = 0;
+                                    function flipperY() {
+                                            if (flipped) {
+                                            
+                                                //prop.style.WebkitTransform = "rotateY(0deg)";
+                                                prop.style.WebkitTransform ="rotateY(0deg)";
+                                            }
+                                            else {
+                                            
+                                            prop.style.WebkitTransform = "rotateY(180deg)";
+                                                // prop.style.WebkitTransform = "rotateY(1800deg)";
+                                            flipped = !flipped ;
+                                            }
+                    </script>
+                </form>
+            </section>
+        </div>
+
+
+        <div class="panel text-center">
+            <h5 id="page2panel">Looking for a new apartment or rental used to
+            mean combing neighborhoods?<br>
+            looking for "for rent" signs and sifting through newspaper
+            classifieds?<br>
+            Now you can take your search on the go, or do it on your laptop or
+            tablet!</h5>
+        </div>
+
+
+        <div class="panel">
+         
+                <div class="panel-heading text-center">
+                    <h2>Start your search here!</h2>
+                </div>
+
+
+                <div class="panel-body text-center">
+                    <input id="Search" name="search" placeholder="Search.." type="text">
+                </div>
+
+
+                <div class="panel-footer text-center">
+                    <button class="btn btn-info" id="SearchB" onclick=
+                    "location.href='page3.html';" type="button">Search
+                    ϙ</button>
+                </div>
+        </div>
+
+
+        <div class="panel text-center">
+            <div class="image">
+                <div class="gallery js-flickity" data-flickity-options=
+                '{ "cellAlign": "left", "contain": true , "freeScroll": true, "wrapAround": true, "autoPlay": 2000, "pageDots":false}'>
+                <img alt="showing the first offer" class="image1" onclick=
+                "location.href='page4.html';" src="offre1.jpg"> <img alt=
+                "showing the second offer" class="image1" onclick=
+                "location.href='page4.html';" src="offre2.jpeg"> <img alt=
+                "showing the third offer" class="image1" onclick=
+                "location.href='page4.html';" src="offre3.jpg"></div>
+            </div>
+        </div>
+        <!-- closing div articles -->
+    </div>
+        <footer>
+            <div class="panel">
+                <p>©Bouneb-Günther - 2016 EURECOM - WebInt</p>
+            </div>
+        </footer>
 </body>
 </html>

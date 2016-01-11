@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Housing</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+		
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+     
+   
+
+</head>
+
+<body>
+	
+        <header>
+
+                        <img src="Eurecom.jpg" id="logo1" alt="mon logo"/>
+                	<nav>
+                    		<ul>
+                        	<li><a href="page1.html">Home</a></li>
+                        	<li><a href="http://www.eurecom.fr/sites/www.eurecom.fr/files/documents/5-vie_etudiante/Stud_guidePratique/RESIDENCES%20FR_3.pdf">Help</a></li>
+                        	<li><a href="http://www.eurecom.fr/en/student-life/survival-guide/housing">About</a></li>
+                    	</ul>
+                	</nav> 
+
+
+                        <img src="applogo.png" id="AppName" alt="logo of the website"/>          
+
+ 
+        </header>
+
+	
+<article id="sign">
+<form id="emailForm" class="form-horizontal">
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Email address</label>
+        <div class="col-xs-7">
+            <input type="text" class="form-control" name="email" />
+        </div>
+    </div>
+</form>
+
+<script>
+$(document).ready(function() {
+    $('#emailForm').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            email: {
+                validators: {
+                    emailAddress: {
+                        message: 'The value is not a valid email address'
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+</article>
+
+
+
+
+
+			
+	   
+            <article id="sign">
+            <form method="GET" action="http://www.eurecom.fr/cgi-bin/echo.pl">
+                <h2>Sign in</h2>
+                <p>Username : <br /><input type="text" name="Username:"/></p> 
+                <p>Password : <br /><input type="password" name="Password:"/></p>
+                <br />
+                <input type="checkbox" id="IdCheckBox" value="valeur" /> 
+                <label for="IdCheckBox">Remember Me</label>
+                
+                <br /><br />
+                <button type="button" class="btn btn-info" onclick="location.href='page2.html';"> Sign in</button>
+             </form>
+         </article>
+         	
+	
+
+			
+    <footer>
+        <div id="copyright">
+        <p>©Bouneb-Günther - 2016 EURECOM - WebInt</p> 
+        </div>   		
+
+    </footer>
+    
+</body>
+</html>
