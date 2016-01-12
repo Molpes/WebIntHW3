@@ -1,49 +1,50 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
-        <meta charset="utf-8">
-        <link href="map.css" rel="stylesheet" type="text/css">
-        
-	<title>Housing</title>
-	       <!--<link rel="shortcut icon" href="favicon.ico" /> -->
 
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- external flickity.css -->
+    <link rel="stylesheet" href="flickity.css">
 
+        <title>Housing</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+
+<!-- bootstrap for button -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-		
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-   
-			<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
-	<script type="text/javascript">
-				$(document).ready(function(){
-					$(".FadeIn1b").hide();
-				
-					$(".FadeOut").click(function() {
-						$(".FadeOut").fadeOut("fast");
-						$(".FadeIn1b").fadeIn("3000");
-					});
-				});
-			
-	</script>
+
+        <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.js"></script> 
+
+      <script type="text/javascript">
+                $(document).ready(function(){
+                    $(".FadeIn1b").hide();
+                
+                    $(".FadeOut").click(function() {
+                        $(".FadeOut").fadeOut("fast");
+                        $(".FadeIn1b").fadeIn("3000");
+                    });
+                });
+            
+    </script>
 
 
 
 </head>
 
 <body>
-	
+    
     <header>
-        <img alt="mon logo" id="logo1" src="Eurecom.jpg"> <input id="Search"
-        name="search" placeholder="Search.." type="text"> <button class=
-        "btn btn-info" id="SearchB" type="button">Search ϙ</button> 
-	<!--<img id="login" alt="logo of the website" id="AppName" src="applogo.png">-->
-
-
+        <img alt="mon logo" id="logo1" src="Eurecom.jpg"> 
+        <input id="Search" class="round" name="search" placeholder="Search.." type="text"> 
+        <button class="btn btn-info" id="SearchB" type="button">Search ϙ</button> 
+        <img alt="logo of the website" id="AppName" src="applogo.png">
 
         <nav>
             <ul>
@@ -68,21 +69,18 @@
         </nav>
     </header>
 
-	
-
-
-
-
-
-
-			
-	<!--<div class="container">  -->	   
+            
+    <!--<div class="container">  -->       
           <div class="panel text-center">
-	<img id="login" class="FadeOut" alt="logo of the website" id="AppName" src="applogo.png">
+		<div id="wrapper">
+	    <img  class="FadeOut hover" alt="logo of the website" id="AppName1" src="applogo.png">
+		<p class="text">Click Me!</p>
+		</div>
             <form method="GET" action="http://www.eurecom.fr/cgi-bin/echo.pl" class="FadeIn1b">
                 <h2>Sign in</h2>
-                <p>Username : <br /><input id="usr" type="text" name="Username:"/></p> 
-                <p>Password : <br /><input id="pwd" type="password" name="Password:"/></p>
+
+                <p class="cooper">Your Eurecom email : <br /><input id="usr" class="round" type="text"  name="Username:"/></p> 
+                <p class="cooper">Password : <br /><input  id="pwd" class="round" type="password" name="Password:"/></p>
                 <br />
                 <input type="checkbox" id="IdCheckBox" value="valeur" /> 
                 <label for="IdCheckBox">Remember Me</label>
@@ -90,12 +88,12 @@
                 <br /><br />
                 <button id="signinbtn" type="button" class="btn btn-info" > Sign in</button> <!-- onclick="location.href='page2.html';" -->
              </form>
-        </div>         	
-	<!-- </div> -->
+        </div>          
+    <!-- </div> -->
 
 			
 	<footer>
-		<div class="panel">
+		<div id="copyright">
         		<p>©Bouneb-Günther - 2016 EURECOM - WebInt</p> 
         	</div>
 	</footer>	

@@ -14,15 +14,21 @@ function $(id) {
 	return document.getElementById(id);
 }
 
+
 function initialize() {
 	var mapOptions = {
 		center: new google.maps.LatLng(-34.397, 150.644),
-		zoom: 12
+		zoom: 12,
+		scrollwheel: false
+
 	};
 	map = new google.maps.Map($("google-map"), mapOptions);
 	geocoder = new google.maps.Geocoder();
 }
 initialize();
+
+
+
 
 function updateMarkerPosition(latlng) {
 	if ( marker == null ) {
@@ -34,7 +40,7 @@ function updateMarkerPosition(latlng) {
 	}
 	else {
 		marker.setPosition(latlng);
-	}
+	} 
 
 	// Center map as well
 	map.setCenter(latlng);

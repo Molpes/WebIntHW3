@@ -2,6 +2,12 @@ $(document).ready(function() {
 // global variable for wordcount
 var cc="0";
 
+//booking confirmation
+
+$('#book').click(function() {
+    alert("The owner will contact you ! Thanks for your interst") ;
+}) ;
+
 // Function to get input value.
 $('#text_value').click(function() {
 var text_value = $("#text").val();
@@ -48,7 +54,7 @@ $("#textarea").each(function() {
     $this.attr('maxlength', null);
     
     var el = $("<span class=\"character-count\">" + maxLength + "</span>");
-    el.insertBefore($this);
+    el.insertAfter($this);
     
     $this.bind('keyup', function() {
         var cc = $this.val().length;

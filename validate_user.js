@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
-$('#login').click(function() {
-alert("You need first to log in, in order to  log of");
-});
+
 
 
 //alert user to login first
