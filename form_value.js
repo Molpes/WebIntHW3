@@ -4,7 +4,7 @@ var cc="0";
 
 //booking confirmation
 
-$('#book').click(function() {
+$('.book').click(function() {
     alert("The owner will contact you ! Thanks for your interst") ;
 }) ;
 
