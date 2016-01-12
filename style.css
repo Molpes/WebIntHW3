@@ -415,3 +415,7 @@ video {
 #copyright p {
     color: #fff;
 }
+
+.filter-btn {
+	color:gray;
+}
