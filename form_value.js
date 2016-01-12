@@ -5,7 +5,7 @@ var cc="0";
 //booking confirmation
 
 $('#book').click(function() {
-    alert("The owner will contact you ! Thanks for your interst") ;
+    alert("The owner will contact you ! Thanks for your interest") ;
 }) ;
 
 // Function to get input value.
